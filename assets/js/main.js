@@ -1,8 +1,8 @@
 /*
-	Standout by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
+	Anthony N.
+	SGL
 */
+
 
 (function($) {
 
