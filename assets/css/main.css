@@ -3321,7 +3321,7 @@ input, select, textarea {
 			-webkit-transform: translateY(-100%) scale(-1, 1);
 			-ms-transform: translateY(-100%) scale(-1, 1);
 			transform: translateY(-100%) scale(-1, 1);
-			content: '';
+			content: ;
 			top: 0;
 			z-index:-1;
 		}
@@ -3780,13 +3780,13 @@ input, select, textarea {
 	}
 
 	body #page-wrapper {
-		padding-top: 4rem;
+		padding-top: 0px;
 	}
 
 		@media screen and (max-width: 736px) {
 
 			body #page-wrapper {
-				padding-top: 3rem;
+				padding-top: 0px;
 			}
 
 		}
