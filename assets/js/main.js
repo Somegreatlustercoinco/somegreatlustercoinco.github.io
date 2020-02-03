@@ -60,10 +60,10 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'images/slides/slide01.jpg': '0% 35%',
-							'images/slides/slide02.jpg': 'center',
-							'images/slides/slide03.jpg': 'center',
-							'images/slides/slide04.jpg': 'center'
+							'https://cdn.shopify.com/s/files/1/0275/9393/2886/files/slide01.jpg?v=1580510478': '0% 35%',
+							'https://cdn.shopify.com/s/files/1/0275/9393/2886/files/slide02.jpg?v=1580510442': 'center',
+							'https://cdn.shopify.com/s/files/1/0275/9393/2886/files/slide03.jpg?v=1580509418': 'center',
+							'https://cdn.shopify.com/s/files/1/0275/9393/2886/files/slide04.jpg?v=1580510491': 'center'
 						},
 
 					// Delay.
