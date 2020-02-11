@@ -1980,9 +1980,9 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button {
-		background-color: transparent;
-		box-shadow: inset 0 0 0 3px #23b1ec;
-		color: #23b1ec !important;
+		background-color: #eeeeee29;
+		box-shadow: inset 0 0 0 3px #bcb096;
+		color: #767676fc !important;
 	}
 
 		input[type="submit"]:hover,
