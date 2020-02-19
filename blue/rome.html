@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<html><head>
+				<title>Welcome to Rome — Preview</title>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="https://somegreatlustercoinco.github.io/blue/assets/css/main.css">
+		<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+		<script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://vici.org/js/vici-2.latest.js"></script>
+			<style type="text/css">#map img {border:0} #map #displaybox a:link {text-decoration:underline;color:#fff} #map #displaybox a:visited {text-decoration:underline;color:#fff} #map #displaybox a:hover{text-decoration:underline;color:#fff} #map #displaybox a:active{text-decoration:underline;color:#fff} .infomarker{float:left;vertical-align:text-top;margin-top:-2px;margin-right:5px;cursor:pointer} .marker{width:32px;height:37px;display:inline-block} .icon1{background:url(http://vici.org/images/markers_selection.png) 0px 0} .iconS1{background:url(http://vici.org/images/markers_selection.png) 0px -37px} .icon2{background:url(http://vici.org/images/markers_selection.png) -32px 0} .iconS2{background:url(http://vici.org/images/markers_selection.png) -32px -37px} .icon3{background:url(http://vici.org/images/markers_selection.png) -64px 0} .iconS3{background:url(http://vici.org/images/markers_selection.png) -64px -37px} .icon4{background:url(http://vici.org/images/markers_selection.png) -96px 0} .iconS4{background:url(http://vici.org/images/markers_selection.png) -96px -37px} .icon5{background:url(http://vici.org/images/markers_selection.png) -128px 0} .iconS5{background:url(http://vici.org/images/markers_selection.png) -128px -37px} .icon6{background:url(http://vici.org/images/markers_selection.png) -160px 0} .iconS6{background:url(http://vici.org/images/markers_selection.png) -160px -37px} .icon7{background:url(http://vici.org/images/markers_selection.png) -192px 0} .iconS7{background:url(http://vici.org/images/markers_selection.png) -192px -37px} .icon8{background:url(http://vici.org/images/markers_selection.png) -224px 0} .iconS8{background:url(http://vici.org/images/markers_selection.png) -224px -37px} .icon9{background:url(http://vici.org/images/markers_selection.png) -256px 0} .iconS9{background:url(http://vici.org/images/markers_selection.png) -256px -37px} .icon10{background:url(http://vici.org/images/markers_selection.png) -288px 0} .iconS10{background:url(http://vici.org/images/markers_selection.png) -288px -37px} .icon11{background:url(http://vici.org/images/markers_selection.png) -320px 0} .iconS11{background:url(http://vici.org/images/markers_selection.png) -320px -37px} .icon12{background:url(http://vici.org/images/markers_selection.png) -352px 0} .iconS12{background:url(http://vici.org/images/markers_selection.png) -352px -37px} .icon13{background:url(http://vici.org/images/markers_selection.png) -384px 0} .iconS13{background:url(http://vici.org/images/markers_selection.png) -384px -37px} .icon14{background:url(http://vici.org/images/markers_selection.png) -416px 0} .iconS14{background:url(http://vici.org/images/markers_selection.png) -416px -37px} .icon15{background:url(http://vici.org/images/markers_selection.png) -448px 0} .iconS15{background:url(http://vici.org/images/markers_selection.png) -448px -37px} .icon16{background:url(http://vici.org/images/markers_selection.png) -480px 0} .iconS16{background:url(http://vici.org/images/markers_selection.png) -480px -37px} .icon17{background:url(http://vici.org/images/markers_selection.png) -512px 0} .iconS17{background:url(http://vici.org/images/markers_selection.png) -512px -37px} .icon18{background:url(http://vici.org/images/markers_selection.png) -544px 0} .iconS18{background:url(http://vici.org/images/markers_selection.png) -544px -37px} .icon19{background:url(http://vici.org/images/markers_selection.png) -576px 0} .iconS19{background:url(http://vici.org/images/markers_selection.png) -576px -37px} .icon20{background:url(http://vici.org/images/markers_selection.png) -608px 0} .iconS20{background:url(http://vici.org/images/markers_selection.png) -608px -37px} .icon21{background:url(http://vici.org/images/markers_selection.png) -640px 0} .iconS21{background:url(http://vici.org/images/markers_selection.png) -640px -37px} .icon22{background:url(http://vici.org/images/markers_selection.png) -672px 0} .iconS22{background:url(http://vici.org/images/markers_selection.png) -672px -37px} .icon23{background:url(http://vici.org/images/markers_selection.png) -704px 0} .iconS23{background:url(http://vici.org/images/markers_selection.png) -704px -37px} .icon24{background:url(http://vici.org/images/markers_selection.png) -736px 0} .iconS24{background:url(http://vici.org/images/markers_selection.png) -736px -37px} .icon25{background:url(http://vici.org/images/markers_selection.png) -768px 0} .iconS25{background:url(http://vici.org/images/markers_selection.png) -768px -37px} .ol-rotate{top: 85px !important; left: .5em !important; right: auto !important} .ol-scale-line{bottom: 22px !important;right: 5px !important; left: auto !important} </style></head>
+			
+			<body class="is-preload">
+
+				<!-- Wrapper -->
+					<div id="wrapper">
+
+						<!-- Header -->
+							<header id="header" class="alt" style="display:none;">
+
+								<!-- Logo -->
+									<div class="logo">
+										<a href="index.html"><strong>Some Great Luster Coin Company</strong> <span class="extra"></span></a>
+									</div>
+
+								<!-- Nav -->
+									<nav id="nav">
+										<ul>
+											<li class="current"><a href="index.html">Home</a></li>
+											<li>
+												<a href="#" class="icon solid fa-angle-down">Dropdown</a>
+												<ul>
+													<li><a href="#">Option One</a></li>
+													<li><a href="#">Option Two</a></li>
+													<li><a href="#">Option Three</a></li>
+													<li>
+														<a href="#">Submenu</a>
+														<ul>
+															<li><a href="#">Option One</a></li>
+															<li><a href="#">Option Two</a></li>
+															<li><a href="#">Option Three</a></li>
+															<li><a href="#">Option Four</a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+										</ul>
+									</nav>
+
+							</header>
+
+						<!-- Banner -->
+							<section id="banner">
+								<div class="content primary" style="display:;">
+									<header>
+										<h2>Now Playing:<br>
+										Rome As It Was</h2>
+										<p>Take A Trip Back To Ancient Rome 320 C.E.</p>
+									</header>
+									<ul class="actions special">
+										<li><a href="#one" class="button large wide scrolly">View</a></li>
+									</ul>
+								</div>
+								<div class="content secondary">
+									<div class="inner">
+										<div class="features">
+											<section>
+												<span style="font-size: 4em; color: gold;">
+												<i class="icon far fa-play-circle"></i></span>
+												<h3>Videos To Watch: Ancient Rome In 20 Minutes, Rome: As It Was</h3>
+												<p>Get a full Ancient Roman Empire history lesson in this 20 minute video we thought was pretty well done! Originally made in Russia it was redone with an English voiceover. </p>
+
+		<iframe src="https://www.youtube-nocookie.com/embed/46ZXl-V4qwY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" width="100%" height="auto;" frameborder="0"></iframe>
+
+											</section>
+											<section>
+											<span style="font-size: 4em; color: black;">
+											<i class="far fa-calendar-check"></i></span>
+
+												<h3>Interactive Timeline: Take A Scroll Through Ancient Rome And </h3>
+												<p>Ancient history can get pretty overwelming  with so many events and dates it's hard to keep track of. Check out these maps and timelines to get your dates in order. </p>
+											</section>
+											<section>
+											<span style="font-size: 4em; color: red;">
+												<i class="fas fa-heart-broken"></i>
+											</span>
+											<span style="font-size: 3em; color: blue;">
+												<i class="fas fa-heart-broken"></i>
+											</span>
+												<span style="font-size: 2em; color: blue;">
+													<i class="fas fa-heart-broken"></i></span>
+
+												<h3>Emperor Cladius II Gothicus : The Father Of Valentine's Day </h3>
+												<p> Claudius II Gothicus died of plague in 270. Although he won an historic victory over the Goths at the Battle of Naissus, Claudius Gothicus is known to history as the man who killed St. Valentine. Own an authentic Bronze Roman Coin of The Emperor struck during his reign!</p>
+											</section>
+										</div>
+									</div>
+								</div>
+								<video src="images/banner.mp4" muted="" autoplay="" loop="" playsinline=""></video>
+							</section>
+
+						<!-- Section -->
+							<section id="one" class="main">
+								<header class="accent1">
+									<h2>Sed adipising ornare risus</h2>
+									<div id="map" style="width:600px; height:400px; position:relative"><div class="ol-viewport" style="position: relative; overflow: hidden; width: 100%; height: 100%; touch-action: none;" data-view="9"><canvas style="width: 100%; height: 100%; display: block;" class="ol-unselectable" width="1200" height="800"></canvas><div class="ol-overlaycontainer"></div><div class="ol-overlaycontainer-stopevent"><div class="ol-zoom ol-unselectable ol-control"><button class="ol-zoom-in" type="button" title="Zoom in">+</button><button class="ol-zoom-out" type="button" title="Zoom out">−</button></div><div class="ol-rotate ol-unselectable ol-control ol-hidden"><button class="ol-rotate-reset" type="button" title="Reset rotation"><span class="ol-compass" style="transform: rotate(0rad);">⇧</span></button></div><div class="ol-attribution ol-unselectable ol-control ol-uncollapsible"><ul><li style=""><a href="https://openlayers.org/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAHGAAABxgEXwfpGAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAhNQTFRF////AP//AICAgP//AFVVQECA////K1VVSbbbYL/fJ05idsTYJFtbbcjbJllmZszWWMTOIFhoHlNiZszTa9DdUcHNHlNlV8XRIVdiasrUHlZjIVZjaMnVH1RlIFRkH1RkH1ZlasvYasvXVsPQH1VkacnVa8vWIVZjIFRjVMPQa8rXIVVkXsXRsNveIFVkIFZlIVVj3eDeh6GmbMvXH1ZkIFRka8rWbMvXIFVkIFVjIFVkbMvWH1VjbMvWIFVlbcvWIFVla8vVIFVkbMvWbMvVH1VkbMvWIFVlbcvWIFVkbcvVbMvWjNPbIFVkU8LPwMzNIFVkbczWIFVkbsvWbMvXIFVkRnB8bcvW2+TkW8XRIFVkIlZlJVloJlpoKlxrLl9tMmJwOWd0Omh1RXF8TneCT3iDUHiDU8LPVMLPVcLPVcPQVsPPVsPQV8PQWMTQWsTQW8TQXMXSXsXRX4SNX8bSYMfTYcfTYsfTY8jUZcfSZsnUaIqTacrVasrVa8jTa8rWbI2VbMvWbcvWdJObdcvUdszUd8vVeJaee87Yfc3WgJyjhqGnitDYjaarldPZnrK2oNbborW5o9bbo9fbpLa6q9ndrL3ArtndscDDutzfu8fJwN7gwt7gxc/QyuHhy+HizeHi0NfX0+Pj19zb1+Tj2uXk29/e3uLg3+Lh3+bl4uXj4ufl4+fl5Ofl5ufl5ujm5+jmySDnBAAAAFp0Uk5TAAECAgMEBAYHCA0NDg4UGRogIiMmKSssLzU7PkJJT1JTVFliY2hrdHZ3foSFhYeJjY2QkpugqbG1tre5w8zQ09XY3uXn6+zx8vT09vf4+Pj5+fr6/P39/f3+gz7SsAAAAVVJREFUOMtjYKA7EBDnwCPLrObS1BRiLoJLnte6CQy8FLHLCzs2QUG4FjZ5GbcmBDDjxJBXDWxCBrb8aM4zbkIDzpLYnAcE9VXlJSWlZRU13koIeW57mGx5XjoMZEUqwxWYQaQbSzLSkYGfKFSe0QMsX5WbjgY0YS4MBplemI4BdGBW+DQ11eZiymfqQuXZIjqwyadPNoSZ4L+0FVM6e+oGI6g8a9iKNT3o8kVzNkzRg5lgl7p4wyRUL9Yt2jAxVh6mQCogae6GmflI8p0r13VFWTHBQ0rWPW7ahgWVcPm+9cuLoyy4kCJDzCm6d8PSFoh0zvQNC5OjDJhQopPPJqph1doJBUD5tnkbZiUEqaCnB3bTqLTFG1bPn71kw4b+GFdpLElKIzRxxgYgWNYc5SCENVHKeUaltHdXx0dZ8uBI1hJ2UUDgq82CM2MwKeibqAvSO7MCABq0wXEPiqWEAAAAAElFTkSuQmCC"></a></li><li>© <a href="http://awmc.unc.edu/">Ancient World Mapping Center</a> CC BY 4.0</li></ul><button type="button" title="Attributions"><span>i</span></button></div></div></div><div style="position: absolute; top: 6px; right: 6px; height: 0px; width: 270px; color: rgb(255, 255, 255); font-family: Helvetica; font-size: 12px; line-height: 120%; z-index: 1;" id="displaybox"><div style="width: 270px; background-color: rgba(0, 60, 136, 0.7); border-radius: 2px; margin-bottom: 1px;" id="infobox"><div style="float:right; width: 18px; height: 18px; margin-right:2px; margin-top:2px;"><img id="vici_sel_close" src="http://vici.org/images/close-button.png"></div><div style="font-size: 1.2em; font-weight:bold; margin-left:8px; padding-top:5px;">Selection:</div><div style="padding:5px; min-height: 36px;"><a href="http://vici.org/vici/7200/"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw==" class="marker infomarker iconS13" width="32" height="37"></a><div style="font-weight:bold">Opimiano</div><div style="margin-left:37px">Opimiano - pleiades #422992 [&nbsp;<a href="http://vici.org/vici/7200/">more</a>&nbsp;]</div></div></div><div style="width: 270px; background-color: rgba(0, 60, 136, 0.7); border-radius: 2px;" id="highlightsbox"></div></div><div style="position: absolute; bottom: 0px; left: 12px; color: rgb(255, 255, 255); font-family: Helvetica; font-size: 12px; line-height: 120%; background-color: rgba(0, 60, 136, 0.7); border-top-left-radius: 2px; border-top-right-radius: 2px; z-index: 1;"><div style="position:relative"><div id="vicihandle" style="width:100%; font-size: 1.2em;font-weight:bold; margin:4px 8px; cursor: pointer;padding-right:14px"><img style="vertical-align:bottom;width:18px;height:18px;background:url(http://vici.org/images/icons-18-white.png) -792px 0;" src="http://vici.org/images/trans.gif" width="1" height="1">Adjust view settings</div><div id="viciform" style="margin: 4px 8px; display: none;"><div style="margin-top:8px"><strong>Map background:</strong></div><input type="radio" name="map" value="OSM" id="OSM" checked=""><label for="OSM"> OpenStreetMap</label><br><input type="radio" name="map" value="AWMC" id="AWMC"><label for="AWMC"> Ancient World Mapping Center</label><br></div></div></div></div>
+									<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue eu vulpu magna erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan porttitor facilisis luctus, metus lorem feugiat tempus adipiscing.</p>
+								</header>
+								<ul class="tabs">
+									<li>
+										<h3>Lorem <span class="extra">ipsum dolor</span></h3>
+										<div class="spotlight">
+											<ul>
+												<li>
+													<h4>Magna accumsan</h4>
+													<p>Lorem in sem quis dui placerat ornare tra sed etiam veroeros consequat.</p>
+												</li>
+												<li>
+													<h4>Erat aliquam</h4>
+													<p>Praesent dapibus, neque id cursus fauci quam erat volutpat nam dui mitin.</p>
+												</li>
+											</ul>
+											<span class="image"><img src="images/pic01.jpg" alt=""></span>
+											<ul>
+												<li>
+													<h4>Neque veroeros</h4>
+													<p>Sed adipiscing ornare risus. Morbi lorem lentesque egestas sem consequat.</p>
+												</li>
+												<li>
+													<h4>Quis portitor</h4>
+													<p>Donec nec justo eget felis facilisis ferme Aenean dignissim pellen.</p>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<h3>Adipsicing <span class="extra">feugiat</span></h3>
+										<div class="spotlight">
+											<ul>
+												<li>
+													<h4>Erat aliquam</h4>
+													<p>Praesent dapibus, neque id cursus fauci quam erat volutpat nam dui mitin.</p>
+												</li>
+												<li>
+													<h4>Neque veroeros</h4>
+													<p>Sed adipiscing ornare risus. Morbi lorem lentesque egestas sem consequat.</p>
+												</li>
+											</ul>
+											<span class="image"><img src="images/pic02.jpg" alt=""></span>
+											<ul>
+												<li>
+													<h4>Quis portitor</h4>
+													<p>Donec nec justo eget felis facilisis ferme Aenean dignissim pellen.</p>
+												</li>
+												<li>
+													<h4>Magna accumsan</h4>
+													<p>Lorem in sem quis dui placerat ornare tra sed etiam veroeros consequat.</p>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<h3>Magna <span class="extra">et accumsan</span></h3>
+										<div class="spotlight">
+											<ul>
+												<li>
+													<h4>Neque veroeros</h4>
+													<p>Sed adipiscing ornare risus. Morbi lorem lentesque egestas sem consequat.</p>
+												</li>
+												<li>
+													<h4>Quis portitor</h4>
+													<p>Donec nec justo eget felis facilisis ferme Aenean dignissim pellen.</p>
+												</li>
+											</ul>
+											<span class="image"><img src="images/pic03.jpg" alt=""></span>
+											<ul>
+												<li>
+													<h4>Magna accumsan</h4>
+													<p>Lorem in sem quis dui placerat ornare tra sed etiam veroeros consequat.</p>
+												</li>
+												<li>
+													<h4>Erat aliquam</h4>
+													<p>Praesent dapibus, neque id cursus fauci quam erat volutpat nam dui mitin.</p>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Section -->
+							<section id="two" class="main accent2">
+								<header>
+									<h2>Etiam sed faucibus consequat</h2>
+									<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue eu vulpu magna erat. Aliquam erat volutpat. Nam dui mi tincidunt magna accumsan.</p>
+								</header>
+								<div class="inner">
+									<span class="image main"><img src="images/pic04.jpg" alt=""></span>
+								</div>
+							</section>
+
+						<!-- Section -->
+							<section id="three" class="main alt">
+								<header>
+									<h2>Auctor nam sed aliquam</h2>
+									<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue eu vulpu magna erat. Aliquam erat volutpat. Nam dui mi tincidunt magna accumsan.</p>
+								</header>
+								<div class="inner">
+									<div class="posts">
+										<div>
+											<article>
+												<a href="#" class="image"><img src="images/pic05.jpg" alt=""></a>
+												<div class="content">
+													<h3>Blandit aliquam</h3>
+													<p>Feugiat ultrices sed nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Lorem nulla sed gravida non magna.</p>
+													<ul class="actions">
+														<li><a href="#" class="button">More</a></li>
+													</ul>
+												</div>
+											</article>
+											<article>
+												<div class="content">
+													<h3>Amet euismod</h3>
+													<p>Sed ligula vulputate et amet tristique cursus. Lorem nulla sed gravida non magna sed feugiat consequat.</p>
+													<ul class="actions">
+														<li><a href="#" class="button">More</a></li>
+													</ul>
+												</div>
+											</article>
+										</div>
+										<div>
+											<article>
+												<div class="content">
+													<h3>Sed amet feugiat</h3>
+													<p>Phasellus ultrices sed nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Lorem nulla sed gravida non.</p>
+													<ul class="actions">
+														<li><a href="#" class="button">More</a></li>
+													</ul>
+												</div>
+											</article>
+											<article>
+												<a href="#" class="image"><img src="images/pic06.jpg" alt=""></a>
+												<div class="content">
+													<h3>Gravida veroeros</h3>
+													<p>Phasellus ultrices sed nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Lorem nulla sed gravida non.</p>
+													<ul class="actions">
+														<li><a href="#" class="button">More</a></li>
+													</ul>
+												</div>
+											</article>
+										</div>
+										<div>
+											<article>
+												<a href="#" class="image"><img src="images/pic07.jpg" alt=""></a>
+												<div class="content">
+													<h3>Ipsum volutpat</h3>
+													<p>Donec consectetuer ligula vulputate sem tristique cursus. Lorem nulla sed gravida non. Phasellus et ultricesnulla quis nibh. Quisque amet lorem lectus. Magna consectetuer ligula vulputate sem tristique cursus magna.</p>
+													<ul class="actions">
+														<li><a href="#" class="button">More</a></li>
+													</ul>
+												</div>
+											</article>
+										</div>
+									</div>
+								</div>
+							</section>
+							
+
+						<!-- Footer -->
+							<footer id="footer">
+								<div class="inner">
+									<section>
+										<h3>Nullam sed gravida</h3>
+										<p>Phasellus ultrices sed nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus sed magna gravida non.</p>
+										<ul class="icons">
+											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										</ul>
+									</section>
+									<section class="narrow">
+										<h4>Lorem aliquam</h4>
+										<ul class="links">
+											<li><a href="#">Ultrices nulla</a></li>
+											<li><a href="#">Quis lectus donec</a></li>
+											<li><a href="#">Magna ligula</a></li>
+											<li><a href="#">Sed etiam tristique</a></li>
+											<li><a href="#">Cursus magna</a></li>
+											<li><a href="#">Gravida dolore</a></li>
+										</ul>
+									</section>
+									<section class="narrow">
+										<h4>Magna tempus</h4>
+										<ul class="links">
+											<li><a href="#">Feugiat ligula</a></li>
+											<li><a href="#">Vulputate tristique</a></li>
+											<li><a href="#">Ultrices nulla</a></li>
+											<li><a href="#">Cursus sed magna</a></li>
+											<li><a href="#">Sed lectus donec</a></li>
+										</ul>
+									</section>
+									<section>
+										<h3>Morbi sed volutpat</h3>
+										<p>Sed vulputate sem tristique cursus sed magna gravida non lorem ipsum dolor sit amet.</p><p>
+										</p><p><a href="#" class="major">(000) 000-0000</a></p>
+									</section>
+								</div>
+								<div class="copyright">
+									<p>© Untitled. All rights reserved.</p>
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Scripts -->
+				<script type="text/javascript">
+		var mapObj = new ViciWidget('map', {});
+		</script>
+					<script src="assets/js/jquery.min.js"></script>
+					<script src="assets/js/jquery.dropotron.min.js"></script>
+					<script src="assets/js/jquery.selectorr.min.js"></script>
+					<script src="assets/js/jquery.scrollex.min.js"></script>
+					<script src="assets/js/jquery.scrolly.min.js"></script>
+					<script src="assets/js/browser.min.js"></script>
+					<script src="assets/js/breakpoints.min.js"></script>
+					<script src="assets/js/util.js"></script>
+					<script src="assets/js/main.js"></script>
+					<div id="extwaiimpotscp" style="display:none" v="{578e" f="ZXpVM09HVTBPR0l3TFRkak9XSXRORGc1TUMwNU1XWm1MV1kyWTJVelpUazFPR1ZrWW4wPQ==" q="e95368bc" c="1.875" i="12.28" u="14.44" s="20020318" w="false" m="BMe=" vn="0pdf5"></div>
+
+			
+
+		</body></html>
+	</body>
+</html>
