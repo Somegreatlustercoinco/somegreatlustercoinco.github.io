@@ -2195,14 +2195,14 @@ input, select, textarea {
 		}
 
 			.panel > *.color0 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #229e87 20%, #7bc1e3 60%, #197d38);
 				background-size: 128px 128px, auto;
 			}
 
 			.panel > *.color1 {
 				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 				background-size: 128px 128px, auto;
-				background-color: #726193;
+				background-color: black;
 			}
 
 			.panel > *.color2 {
@@ -2628,7 +2628,7 @@ input, select, textarea {
 		}
 
 		.panel.small .span-5, .panel.medium .span-5, .panel.large .span-5 {
-			width: 50%;
+			width: 100%;
 		}
 
 		.panel.small .span-5-25, .panel.medium .span-5-25, .panel.large .span-5-25 {
@@ -2719,7 +2719,7 @@ input, select, textarea {
 		.panel.color1 {
 			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 			background-size: 128px 128px, auto;
-			background-color: #726193;
+			background-color: black;
 		}
 
 		.panel.color2 {
@@ -3504,6 +3504,7 @@ input, select, textarea {
 		flex-shrink: 1;
 		height: 100%;
 		padding: 5rem;
+		background-color: whitesmoke;
 	}
 
 		@media screen and (orientation: portrait) {
@@ -3582,14 +3583,27 @@ input, select, textarea {
 			cursor: -ms-grab;
 			cursor: grab;
 			z-index: 10100;
+			top:0;
+			height:50px;
 		}
 
 			#wrapper > .scrollZone.left {
+				top:0;
 				left: 0;
+				background-image: url(https://cdn.shopify.com/s/files/1/0275/9393/2886/files/vippng.com-arrow-pointing-right-png-35943_1.png?v=1582366358);
+					background-size: contain;
+					cursor: w-resize;
+					background-repeat: no-repeat;
+					;
 			}
 
 			#wrapper > .scrollZone.right {
+				top:0;
 				right: 0;
+				background-image: url(https://www.vippng.com/png/full/3-35943_arrow-png-hd-right-arrow-png.png);
+					background-size: contain;
+					cursor: e-resize;
+					background-repeat: no-repeat;
 			}
 
 		#wrapper > .copyright {
