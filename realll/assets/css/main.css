@@ -3592,7 +3592,7 @@ input, select, textarea {
 
 			#wrapper > .scrollZone.left {
 				top:0;
-				left: 40%;
+				left: 40% !important;
 				background-image: url(https://cdn.shopify.com/s/files/1/0275/9393/2886/files/vippng.com-arrow-pointing-right-png-35943_1.png?v=1582366358);
 					background-size: contain;
 					cursor: w-resize;
@@ -3602,7 +3602,7 @@ input, select, textarea {
 
 			#wrapper > .scrollZone.right {
 				top:0;
-				right: 40%;
+				right: 40% !important;
 				background-image: url(https://www.vippng.com/png/full/3-35943_arrow-png-hd-right-arrow-png.png);
 					background-size: contain;
 					cursor: e-resize;
